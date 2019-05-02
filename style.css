@@ -6,6 +6,9 @@
     list-style: none; 
     font-family: 'Roboto Slab', serif;
   }
+  img{
+    max-width: 100%;
+  }
   header{
     width: 100%;
     height: 20vh;
@@ -33,7 +36,6 @@
   .headerMenu__navLink {
     width: 50%;
     font-size: 20px;
-    font-weight: 100;
     color: gray;
     margin: 0 10px;
     line-height: 70px;
@@ -41,16 +43,17 @@
     transition: transform .2s;
   }
   .headerMenu__navLink:hover{
-    transform: scale(1);
     color: black;
     font-weight: bold; 
   }
   label{
-    margin: 0 40px 0 0;
-    font-size: 50px;
-    line-height: 70px;
+    margin: 7px 25px 0px 0px;
+    font-size: 45px;
     display: none;
-    width: 20px;
+    width: 60px;
+    border: 2px solid;
+    text-align: center;
+    border-radius: 50%;
     float: right;
   }
   #mobile{
@@ -88,7 +91,6 @@
   }
   .containerPerfil__img{
     width: 300px;
-    height: 300px;
     border-radius: 50%;
   }
   footer{
@@ -105,6 +107,9 @@
   .footerIcons:hover{
     transform: scale(1.5);
   }
+  .contact{
+    height: 50vh;
+  }
   @media screen and (max-width: 768px) {
     .containerPerfil__blockTitle{
       margin-top: 20px;
@@ -116,6 +121,10 @@
       display: block;
       cursor: pointer;
     }
+    .headerMenu{
+      position: absolute;
+      left: 0;
+    }
     .headerMenu__nav {
       text-align: center;
       width: 100%;
@@ -123,15 +132,16 @@
     }
     .headerMenu__navLink {
       display: block;
-      width: 60%;
+      width: 100%;
       font-size: 30px;
       font-weight: 400;
       float: right;
-      border-bottom: 1px solid #eaeaeb;
+      border-bottom: 1px solid gray;
       margin: 0;
+      opacity: 0.9;
+      color: black;
       background-color: white;
-      opacity: 0.7;
-      transition: transform .2s;
+
     }
     .headerMenu__navLink:hover{
       transform: scale(1);
